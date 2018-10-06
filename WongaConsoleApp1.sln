@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WongaConsoleApp1", "WongaConsoleApp1\WongaConsoleApp1.csproj", "{586C5554-F09D-44DE-B05B-1AA5487A1081}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WongaXUnitTestProject1", "WongaXUnitTestProject1\WongaXUnitTestProject1.csproj", "{D2ED3273-A359-4AD2-817B-3786E1765CE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{586C5554-F09D-44DE-B05B-1AA5487A1081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{586C5554-F09D-44DE-B05B-1AA5487A1081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{586C5554-F09D-44DE-B05B-1AA5487A1081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2ED3273-A359-4AD2-817B-3786E1765CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2ED3273-A359-4AD2-817B-3786E1765CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2ED3273-A359-4AD2-817B-3786E1765CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2ED3273-A359-4AD2-817B-3786E1765CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
