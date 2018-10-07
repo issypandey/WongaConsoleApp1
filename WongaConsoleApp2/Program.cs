@@ -2,6 +2,7 @@
 using RabbitMQ.Client.Events;
 using System;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace WongaConsoleApp2
 {
@@ -28,11 +29,20 @@ namespace WongaConsoleApp2
                     var name = message.Substring(18);
                     if (name != null && name != "")
                     {
-                        Console.WriteLine("Hello {0}, I am your father", name);
+
+                        Regex regex = new Regex(@"^[A-z][A-z|\.|\s]+$");
+                        if (regex.IsMatch(name))
+                        {
+                            Console.WriteLine("Hello {0}, I am your father", name);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid name passed.");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("Invalid name passed.");
+                        Console.WriteLine("No name passed.");
                     }
                 };
                 channel.BasicConsume(queue: "name",

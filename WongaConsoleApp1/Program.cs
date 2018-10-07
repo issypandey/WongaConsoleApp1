@@ -9,14 +9,16 @@ namespace WongaConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello");
+            var name = "";
             Console.WriteLine("What is your name?");
-            var name = Console.ReadLine();
-            var msg = "Hello my name is, " + name;
-
-            var response = Messaging.PublishMessage(msg, "name");
-
-            Console.WriteLine(" Press [enter] to exit.");
-            Console.ReadLine();
+            name = Console.ReadLine();
+            while (name != "exit")
+            {                
+                var msg = "Hello my name is, " + name;
+                var response = Messaging.PublishMessage(msg, "name");
+                Console.WriteLine("Type 'exit' to exit or re-enter a name.");
+                name = Console.ReadLine();
+            }
         }
     }
 }
